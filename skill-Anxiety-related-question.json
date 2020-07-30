@@ -1,0 +1,740 @@
+{
+  "intents": [
+    {
+      "intent": "question_mental",
+      "examples": [
+        {
+          "text": "How Coronavirus disease is affecting our mental health?"
+        },
+        {
+          "text": "Coronavirus affect on mental health"
+        },
+        {
+          "text": "mental health"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "hii"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "how are you"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "good night"
+        },
+        {
+          "text": "good afternoon"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "job_un",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "unemployment",
+          "synonyms": [
+            "unemployed",
+            "no job",
+            "lost job"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "quetion",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "unemployment",
+          "synonyms": [
+            "unemployed"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "anxiety",
+          "synonyms": [
+            "worried",
+            "depressed"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "action",
+          "synonyms": [
+            "what should i do?",
+            "taking action"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mental",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "mental health",
+          "synonyms": [
+            "mentally",
+            "anxious",
+            "mental"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "time_of_day",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "evening",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "morning",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "afternoon",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Chatbot",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "counselor",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "*",
+      "output": {
+        "generic": [
+          {
+            "source": "https://images.indianexpress.com/2018/06/breathing-exercise-759-getty-images.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Physical activity, a healthy diet, regular sleep, and relaxation exercises may all help reduce anxiety. Joining a support group may also help. To manage symptoms effectively, it's best to avoid caffeine, alcohol, and nicotine."
+              },
+              {
+                "text": "You can try these at-home exercises in order to reduce your anxiety level."
+              },
+              {
+                "text": "1.<a href=\"https://www.youtube.com/watch?v=odADwWzHR24\">Breathing exercise</a>. "
+              },
+              {
+                "text": "2.<a href=\"https://www.youtube.com/watch?v=kdLTOurs2lA\">Relax for muscle exercise</a>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Suggested Recommendations:",
+            "options": [
+              {
+                "label": "What should we do if we have lost jobs because of Covid-19?",
+                "value": {
+                  "input": {
+                    "text": "unemployment"
+                  }
+                }
+              },
+              {
+                "label": "How IBM Watson Chatbot is working as AI Counselor?",
+                "value": {
+                  "input": {
+                    "text": "counselor"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@quetion:action",
+      "dialog_node": "node_8_1595621521090",
+      "previous_sibling": "node_2_1595620688994"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "disabled": true,
+      "conditions": "$time_of_day==\"evening\"",
+      "dialog_node": "response_8_1595619680009",
+      "previous_sibling": "response_5_1595619409616"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "IBM Watson Conversational Bot or Chatbot can also play the role of therapists in the mental health field. The chatbot can help the Covid-19 anxiety patients by giving some therapy or counseling sessions such as Cognitive Behavioral Therapy with some exercises, Talk therapy or counseling, Immersion Therapy/ Counseling. The people who don't have access to at-home therapists or real-life therapists during this pandemic time, they can find the chatbot as a useful one because it has human-like conversations with a user through speech, text. People of any age can get help from AI chatbot therapists. In addition, it will give them company and relieve their stress a bit.\n"
+              },
+              {
+                "text": "Click below on the therapy/counseling sessions if you want to start therapy/counseling."
+              },
+              {
+                "text": "\n <a href=\"https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=744a4a7f-52a0-4ace-ad3a37854ee1ddc&serviceInstanceID=a707bc1a-8722-4bb3-9d90-390ec24c08a7\">Cognitive Behavioral Therapy/Counseling</a>. "
+              },
+              {
+                "text": "\n<a href=\"https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=f32f5600-75af-4df1-94c0-9479f8e122e9&serviceInstanceID=35426417-4d77-4595-a47d-c2c35292a341\">Talk Therapy/Couseling</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@Chatbot",
+      "dialog_node": "node_5_1595955707858",
+      "previous_sibling": "node_5_1595894385024"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ". How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "time_of_day": "@time_of_day"
+      },
+      "disabled": true,
+      "conditions": "$time_of_day==\"morning\"",
+      "dialog_node": "response_2_1595619340694",
+      "previous_sibling": "node_5_1595955707858"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "disabled": true,
+      "conditions": "$time_of_day==\"afternoon\"",
+      "dialog_node": "response_5_1595619409616",
+      "previous_sibling": "response_2_1595619340694"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.wuwm.com/sites/wuwm/files/styles/medium/public/202005/AdobeStock_162636992.jpeg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Lots of people have lost their job because of coronavirus. But don't worry! You can apply for unemployment benefits in <a href=\"https://www.usa.gov/unemployment\">Unemployment Benefits</a>. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "source": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.15752-9/116583178_615602199091189_6144669907541197425_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=CUweVVGP43sAX-gOocY&_nc_ht=scontent-lga3-1.xx&oh=0c162d95bf046519ebdad7353057efa5&oe=5F45415F",
+            "response_type": "image"
+          },
+          {
+            "title": "Suggested Topic",
+            "options": [
+              {
+                "label": "How IBM Watson Chatbot is working as AI Counselor?",
+                "value": {
+                  "input": {
+                    "text": "counselor"
+                  }
+                }
+              },
+              {
+                "label": "Covid-19 and anxiety",
+                "value": {
+                  "input": {
+                    "text": "counselor"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@job_un",
+      "dialog_node": "node_5_1595894385024",
+      "previous_sibling": "node_8_1595621521090"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "source": "https://sbtreatment.com/wp-content/uploads/2018/05/Anxiety-Symptoms.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "According to Wikipedia, \"Anxiety\" is an emotion characterized by an unpleasant state of inner turmoil, often accompanied by nervous behavior such as pacing back and forth, somatic complaints, and rumination. It is the subjectively unpleasant feelings of dread over anticipated events."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Suggested Questions:",
+            "options": [
+              {
+                "label": "What should I do if I am feeling anxious?",
+                "value": {
+                  "input": {
+                    "text": "action"
+                  }
+                }
+              },
+              {
+                "label": "Covid-19 and our mental health",
+                "value": {
+                  "input": {
+                    "text": "mental health"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@quetion:anxiety",
+      "dialog_node": "node_2_1595620688994"
+    },
+    {
+      "type": "standard",
+      "title": "copy1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "According to the CDC, The coronavirus disease 2019 (COVID-19) pandemic may be stressful for people. Fear and anxiety about a new disease and what could happen can be overwhelming and cause strong emotions in adults and children. Public health actions, such as social distancing, can make people feel isolated and lonely and can increase stress and anxiety."
+              },
+              {
+                "text": "You can learn more from <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html\">CDC.gov</a>. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_2_1595620688994",
+      "conditions": "@mental",
+      "dialog_node": "node_1_1596066112454",
+      "previous_sibling": "node_9_1596065738121"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Physical activity, a healthy diet, regular sleep, and relaxation exercises may all help reduce anxiety. Joining a support group may also help. To manage symptoms effectively, it's best to avoid caffeine, alcohol, and nicotine."
+              },
+              {
+                "text": "You can try these at-home exercises in order to reduce your anxiety level."
+              },
+              {
+                "text": "1.<a href=\"https://www.youtube.com/watch?v=odADwWzHR24\">Breathing exercise</a>. "
+              },
+              {
+                "text": "2.<a href=\"https://www.youtube.com/watch?v=kdLTOurs2lA\">Relax for muscle exercise</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "source": "https://images.indianexpress.com/2018/06/breathing-exercise-759-getty-images.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_2_1595620688994",
+      "conditions": "@quetion:action",
+      "dialog_node": "node_9_1596065738121"
+    },
+    {
+      "type": "standard",
+      "title": "copy1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "According to the CDC, The coronavirus disease 2019 (COVID-19) pandemic may be stressful for people. Fear and anxiety about a new disease and what could happen can be overwhelming and cause strong emotions in adults and children. Public health actions, such as social distancing, can make people feel isolated and lonely and can increase stress and anxiety."
+              },
+              {
+                "text": "You can learn more from <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html\">CDC.gov</a>. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_5_1595894385024",
+      "conditions": "@mental",
+      "dialog_node": "node_5_1596067816701",
+      "previous_sibling": "node_4_1596067535800"
+    },
+    {
+      "type": "standard",
+      "title": "copy1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "IBM Watson Conversational Bot or Chatbot can also play the role of therapists in the mental health field. The chatbot can help the Covid-19 anxiety patients by giving some therapy or counseling sessions such as Cognitive Behavioral Therapy with some exercises, Talk therapy or counseling, Immersion Therapy/ Counseling. The people who don't have access to at-home therapists or real-life therapists during this pandemic time, they can find the chatbot as a useful one because it has human-like conversations with a user through speech, text. People of any age can get help from AI chatbot therapists. In addition, it will give them company and relieve their stress a bit.\n"
+              },
+              {
+                "text": "Click below on the therapy/counseling sessions if you want to start therapy/counseling."
+              },
+              {
+                "text": "\n <a href=\"https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=744a4a7f-52a0-4ace-ad3a37854ee1ddc&serviceInstanceID=a707bc1a-8722-4bb3-9d90-390ec24c08a7\">Cognitive Behavioral Therapy/Counseling</a>. "
+              },
+              {
+                "text": "\n<a href=\"https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=f32f5600-75af-4df1-94c0-9479f8e122e9&serviceInstanceID=35426417-4d77-4595-a47d-c2c35292a341\">Talk Therapy/Couseling</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_5_1595894385024",
+      "conditions": "@Chatbot",
+      "dialog_node": "node_4_1596067535800"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "According to the CDC, The coronavirus disease 2019 (COVID-19) pandemic may be stressful for people. Fear and anxiety about a new disease and what could happen can be overwhelming and cause strong emotions in adults and children. Public health actions, such as social distancing, can make people feel isolated and lonely and can increase stress and anxiety."
+              },
+              {
+                "text": "You can learn more from <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html\">CDC.gov</a>. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "Anything else",
+      "conditions": "@mental",
+      "dialog_node": "node_10_1595880184900"
+    },
+    {
+      "type": "standard",
+      "title": "copy1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "IBM Watson Conversational Bot or Chatbot can also play the role of therapists in the mental health field. The chatbot can help the Covid-19 anxiety patients by giving some therapy or counseling sessions such as Cognitive Behavioral Therapy with some exercises, Talk therapy or counseling, Immersion Therapy/ Counseling. The people who don't have access to at-home therapists or real-life therapists during this pandemic time, they can find the chatbot as a useful one because it has human-like conversations with a user through speech, text. People of any age can get help from AI chatbot therapists. In addition, it will give them company and relieve their stress a bit.\n"
+              },
+              {
+                "text": "Click below on the therapy/counseling sessions if you want to start therapy/counseling."
+              },
+              {
+                "text": "\n <a href=\"https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=744a4a7f-52a0-4ace-ad3a37854ee1ddc&serviceInstanceID=a707bc1a-8722-4bb3-9d90-390ec24c08a7\">Cognitive Behavioral Therapy/Counseling</a>. "
+              },
+              {
+                "text": "\n<a href=\"https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=f32f5600-75af-4df1-94c0-9479f8e122e9&serviceInstanceID=35426417-4d77-4595-a47d-c2c35292a341\">Talk Therapy/Couseling</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_8_1595621521090",
+      "conditions": "@Chatbot",
+      "dialog_node": "node_3_1596067007945",
+      "previous_sibling": "node_2_1596066736180"
+    },
+    {
+      "type": "standard",
+      "title": "copy1",
+      "output": {
+        "generic": [
+          {
+            "source": "https://www.wuwm.com/sites/wuwm/files/styles/medium/public/202005/AdobeStock_162636992.jpeg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Lots of people have lost their job because of coronavirus. But don't worry! You can apply for unemployment benefits in <a href=\"https://www.usa.gov/unemployment\">Unemployment Benefits</a>. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "source": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.15752-9/116583178_615602199091189_6144669907541197425_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=CUweVVGP43sAX-gOocY&_nc_ht=scontent-lga3-1.xx&oh=0c162d95bf046519ebdad7353057efa5&oe=5F45415F",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_8_1595621521090",
+      "conditions": "@job_un",
+      "dialog_node": "node_2_1596066736180"
+    },
+    {
+      "type": "standard",
+      "title": "Covid-19 effect on mental health",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "According to the CDC, The coronavirus disease 2019 (COVID-19) pandemic may be stressful for people. Fear and anxiety about a new disease and what could happen can be overwhelming and cause strong emotions in adults and children. Public health actions, such as social distancing, can make people feel isolated and lonely and can increase stress and anxiety."
+              },
+              {
+                "text": "You can learn more from <a href=\"https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html\">CDC.gov</a>. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#question_mental",
+      "dialog_node": "node_9_1595876348518",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am apologizing for not understanding your word. Would you like to rephrase?"
+              },
+              {
+                "text": "Or, there are some suggestions questions that you can click on."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Suggested Recommandations",
+            "options": [
+              {
+                "label": "Covid-19 and our mental health",
+                "value": {
+                  "input": {
+                    "text": "mental health"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1595876348518",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hii, I am a Nao. I am here to answer your COVID-19 anxiety-related questions."
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Example Questions",
+            "options": [
+              {
+                "label": "What is anxiety?",
+                "value": {
+                  "input": {
+                    "text": "anxiety"
+                  }
+                }
+              },
+              {
+                "label": "What should I do if I am feeling anxious?",
+                "value": {
+                  "input": {
+                    "text": "action"
+                  }
+                }
+              },
+              {
+                "label": "What should we do if we have lost jobs because of Covid-19?",
+                "value": {
+                  "input": {
+                    "text": "unemployment"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "Also learn:",
+            "options": [
+              {
+                "label": "How IBM Watson Chatbot is working as AI Counselor?",
+                "value": {
+                  "input": {
+                    "text": "counselor"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "time_of_day": "@time_of_day"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Anxiety related question",
+  "language": "en",
+  "description": ""
+}
