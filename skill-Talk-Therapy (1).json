@@ -1,0 +1,1027 @@
+{
+  "intents": [
+    {
+      "intent": "thank_you",
+      "examples": [
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "cheers"
+        },
+        {
+          "text": "appreciate it"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "hours_info",
+      "examples": [
+        {
+          "text": "Are you open on Christmas' Day?"
+        },
+        {
+          "text": "When do you open"
+        },
+        {
+          "text": "When are you open"
+        },
+        {
+          "text": "What days are you closed on?"
+        },
+        {
+          "text": "When do you close"
+        },
+        {
+          "text": "Are you open on Sundays?"
+        },
+        {
+          "text": "What are your hours?"
+        },
+        {
+          "text": "What are your hours of operation?"
+        },
+        {
+          "text": "What time are you open until?"
+        },
+        {
+          "text": "Are you open on Saturdays?"
+        },
+        {
+          "text": "what are the hours of operation for your Montreal store"
+        },
+        {
+          "text": "what are you hours of operation in Toronto"
+        }
+      ]
+    },
+    {
+      "intent": "recommendme_Anxiety",
+      "examples": [
+        {
+          "text": "what do you recommend me to if Im feeling too nervous"
+        },
+        {
+          "text": "What do you recommend me to do if I’m feeling too uneasy"
+        },
+        {
+          "text": "What do you recommend me to do if I’m feeling too worried"
+        },
+        {
+          "text": "What do you recommend me to do if I’m feeling too anxious"
+        },
+        {
+          "text": "What do you recommend me to do if I’m feeling too nervous"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "depression_signs",
+      "examples": [
+        {
+          "text": "What are signs of depression"
+        },
+        {
+          "text": "what are symptoms of depression"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "good afternoon"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Depre_recommendation",
+      "examples": [
+        {
+          "text": "I dont want to do anything, what should I do?"
+        },
+        {
+          "text": "I'm feeling depresive, what can I do?"
+        },
+        {
+          "text": "I'm feeling sad, what can I do?"
+        },
+        {
+          "text": "I have no motivation for anything, what should I do?"
+        },
+        {
+          "text": "what are signs of depression"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "recommendme_Sad",
+      "examples": [
+        {
+          "text": "What do you recommend me to do if I’m feeling depressive"
+        },
+        {
+          "text": "What do you recommend me to do if I’m feeling sad"
+        },
+        {
+          "text": "What do you recommend me to do if I’m feeling unhappy"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "anxiety_signs",
+      "examples": [
+        {
+          "text": "what are signs of anxiety"
+        },
+        {
+          "text": "what are symptoms of anxiety"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Interpersonal_Therapy",
+      "examples": [
+        {
+          "text": "Interpersonal Therapy"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "goodbyes",
+      "examples": [
+        {
+          "text": "talk to you soon"
+        },
+        {
+          "text": "see you"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "c ya"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Cognitive_Behavioral_Therapy",
+      "examples": [
+        {
+          "text": "Cognitive Behavioral Therapy"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "stress_signs",
+      "examples": [
+        {
+          "text": "What are signs of stress"
+        },
+        {
+          "text": "What are symptoms of stress"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Cheer_up",
+      "examples": [
+        {
+          "text": "need some motivation"
+        },
+        {
+          "text": "Show me motivational phrases"
+        },
+        {
+          "text": "Im feeling sad"
+        },
+        {
+          "text": "not feeling good"
+        },
+        {
+          "text": "feeling sad"
+        },
+        {
+          "text": "need motivation"
+        },
+        {
+          "text": "I been crying a lot"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Talk_Therapy_Options",
+      "examples": [
+        {
+          "text": "talk therapy options"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Counselling_for_Depression",
+      "examples": [
+        {
+          "text": "Counselling"
+        },
+        {
+          "text": "what are signs of depression"
+        },
+        {
+          "text": "what are symptoms of depression"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "recommendme_Anxiety",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "distressed",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "perturbed",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "anxious",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "concerned",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "uneasy",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nervous",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "worried",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Ask_Motivational_Phrases",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "show me some motivational words",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Anxiety",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Give me some motivation",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Give me some motivational quotes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "I feel unmotivated",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Need motivation",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Talk_Therapy_Options",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cognitive Behavioral Therapy",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Interpersonal therapy",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Counselling for Depression",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": false
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1596134810499",
+      "variable": "$depression_signs",
+      "dialog_node": "slot_2_1596134810504",
+      "previous_sibling": "response_6_1596134810504"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Anxiety signs and symptoms: Trembling-Increased breathing rate-Feeling nervous or powerless-Having a sense of impending danger or panic-High Heart rate-Sweating"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1596134810499",
+      "conditions": "$Symptoms_Test==\"Sings of Anxiety\"",
+      "dialog_node": "response_6_1596134810504"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1596134813260",
+      "variable": "$depression_signs",
+      "dialog_node": "slot_9_1596134813265",
+      "previous_sibling": "response_14_1596134813265"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Stress signs and symptoms:  Irritability - Anger - Fatigue - Poor sleep - Loss or increase of appetite - Acne - Back pain - Digestive problems - Lack of motivation."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1596134813260",
+      "conditions": "$Symptoms_Test:\"Sings of Stress\"",
+      "dialog_node": "response_14_1596134813265"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1594593774861",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1594593774871",
+      "previous_sibling": "handler_4_1594593774871"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1594593774861",
+      "context": {
+        "Talk_Therapy_Options": "#Cognitive_Behavioral_Therapy"
+      },
+      "conditions": "#Cognitive_Behavioral_Therapy",
+      "event_name": "input",
+      "dialog_node": "handler_4_1594593774871"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1594588670637",
+      "variable": "$Talk_Therapy_Options",
+      "dialog_node": "slot_10_1594593758914"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1594593758914",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1594593758928",
+      "previous_sibling": "handler_7_1594593758928"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1594593758914",
+      "context": {
+        "Talk_Therapy_Options": "#Counselling_for_Depression"
+      },
+      "conditions": "#Counselling_for_Depression",
+      "event_name": "input",
+      "dialog_node": "handler_7_1594593758928"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1594589418044",
+      "variable": "$Talk_Therapy_Options",
+      "dialog_node": "slot_4_1594593774861"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1596134813265",
+      "event_name": "focus",
+      "dialog_node": "handler_11_1596134813265",
+      "previous_sibling": "handler_10_1596134813265"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1596134813265",
+      "context": {
+        "depression_signs": "#depression_signs"
+      },
+      "conditions": "#depression_signs",
+      "event_name": "input",
+      "dialog_node": "handler_10_1596134813265"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Anxiety signs and symptoms: Trembling-Increased breathing rate-Feeling nervous or powerless-Having a sense of impending danger or panic-High Heart rate-Sweating"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594596393025",
+      "conditions": "$Symptoms_Test==\"Sings of Anxiety\"",
+      "dialog_node": "response_1_1594597559690",
+      "previous_sibling": "response_9_1594597061056"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Stress signs and symptoms:  Irritability - Anger - Fatigue - Poor sleep - Loss or increase of appetite - Acne - Back pain - Digestive problems - Lack of motivation."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594596393025",
+      "conditions": "$Symptoms_Test:\"Sings of Stress\"",
+      "dialog_node": "response_1_1594597560997",
+      "previous_sibling": "response_1_1594597559690"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1594596393025",
+      "variable": "$depression_signs",
+      "dialog_node": "slot_2_1594596931203",
+      "previous_sibling": "response_1_1594597560997"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Depression signs and symptoms are: -sadness -weight changes -guilt - energy loss -anger -insomnia - body pain  - lost of interest in daily routines - tiredness - poor concentration."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594596393025",
+      "conditions": "$Symptoms_Test==\"Sings of depression\"",
+      "dialog_node": "response_9_1594597061056"
+    },
+    {
+      "type": "standard",
+      "title": "Thank You",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "My pleasure"
+              },
+              {
+                "text": "No problem. Let me know if there is anything else I can help with."
+              },
+              {
+                "text": "I aim to please :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1593992680016",
+      "conditions": "#thank_you",
+      "dialog_node": "node_2_1593996201197",
+      "previous_sibling": "node_5_1593992942169"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbyes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice talking to you today. I hope you have a wonderful day :)"
+              },
+              {
+                "text": "Have a nice day and remember always to take care of yourself."
+              },
+              {
+                "text": "Bye, and remember to love yourself. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1593992680016",
+      "conditions": "#goodbyes",
+      "dialog_node": "node_10_1594247792407",
+      "previous_sibling": "node_2_1593996201197"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there. How can I help you?"
+              },
+              {
+                "text": "Hello. How may I assist you today?"
+              },
+              {
+                "text": "Hi. What can I help you with?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1593992680016",
+      "conditions": "#greetings",
+      "dialog_node": "node_5_1593992942169"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1596134810504",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1596134810504",
+      "previous_sibling": "handler_3_1596134810504"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1596134810504",
+      "context": {
+        "depression_signs": "#depression_signs"
+      },
+      "conditions": "#depression_signs",
+      "event_name": "input",
+      "dialog_node": "handler_3_1596134810504"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1594589419604",
+      "variable": "$Talk_Therapy_Options",
+      "dialog_node": "slot_10_1594593781374"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1594593781374",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1594593781457",
+      "previous_sibling": "handler_1_1594593781457"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1594593781374",
+      "context": {
+        "Talk_Therapy_Options": "#Interpersonal_Therapy"
+      },
+      "conditions": "#Interpersonal_Therapy",
+      "event_name": "input",
+      "dialog_node": "handler_1_1594593781457"
+    },
+    {
+      "type": "standard",
+      "title": "Collect Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice to meet you, $name. If you want to know about our therapies please type: \n\"Interpersonal therapy\" - \"Counselling for Depression\" - \"Cognitive Behavioral Therapy\"\n or if you are feeling bad you can ask me for motivational phrases :D  "
+              },
+              {
+                "text": "Nice to meet you, $name. Please be aware that these are not professional therapies."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "<? input.text.substring(0, 1).toUpperCase() + input.text.substring(1) ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_6_1594248258094"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1594596931203",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1594596931219",
+      "previous_sibling": "handler_8_1594596931219"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1594596931203",
+      "context": {
+        "depression_signs": "#depression_signs"
+      },
+      "conditions": "#depression_signs",
+      "event_name": "input",
+      "dialog_node": "handler_8_1594596931219"
+    },
+    {
+      "type": "frame",
+      "title": "Stress Signs",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#depression_signs",
+      "dialog_node": "node_8_1596134813260",
+      "previous_sibling": "node_1_1596134810499"
+    },
+    {
+      "type": "frame",
+      "title": "Counselling for Depression",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You may be feeling hopeless and unmotivated right now and I'm here for you. What is making you feel this way?. If you want professional help for this therapy, go to www.example.com"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Counselling_for_Depression",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1594588670637",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_7_1595008856851",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "Motivational phrases",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Trust Yourself. You’ve survived a lot and you will survive whatever is coming."
+              },
+              {
+                "text": "Don’t believe every worried thought you have. Worried thoughts are notoriously inaccurate."
+              },
+              {
+                "text": "Everything you have ever wanted is sitting on the other side of fear."
+              },
+              {
+                "text": "You are bigger than what is making you anxious."
+              },
+              {
+                "text": "If you want to conquer the anxiety of life in the moment, live in the breath."
+              },
+              {
+                "text": "You got this."
+              },
+              {
+                "text": "Simply enjoy life and the great pleasures that comes with it."
+              },
+              {
+                "text": "Never give up, you are capable of great things."
+              },
+              {
+                "text": "If you believe in yourself anything is possible."
+              },
+              {
+                "text": "Everything is going to be ok."
+              },
+              {
+                "text": "Stop being afraid of what could go wrong and think of what could go right."
+              },
+              {
+                "text": "It doesn't matter what others are doing it matters what you are doing."
+              },
+              {
+                "text": "The best view comes after the hardest climb."
+              },
+              {
+                "text": "Your mind is a powerful thing. When you fill it with positive thoughts, your life begins to change."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Cheer_up",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1594509252707",
+      "previous_sibling": "node_8_1596134813260"
+    },
+    {
+      "type": "frame",
+      "title": "Cognitive Behavioral Therapy",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This therapy is effective in the treatment of anxiety, depression, phobia, panic, and addictions. It focuses on changing unhelpful behavior, thoughts, and feelings. If you want professional help for this therapy, go to www.example2.com"
+              },
+              {
+                "text": "You may be feeling low spirited because of this situation. Is there anything that I can do to help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Cognitive_Behavioral_Therapy",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1594589418044",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_8_1594588670637",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "frame",
+      "title": "Interpersonal Therapy",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This therapy is to treat major depressive disorders. It’s also used to treat eating disorders, addictions, and other mood disorders like bipolarity. If you want professional help for this therapy, go to www.example.com"
+              },
+              {
+                "text": "You want to improve your mood. I can help you with that, just tell me how are you feeling and I will tell you what to do. :)"
+              },
+              {
+                "text": "Sometimes we need to take a breath and take away our worries, just tell me how are you feeling and I will give you indications."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#Interpersonal_Therapy",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1594589419604",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_7_1594589418044",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "frame",
+      "title": "Anxiety Signs",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#depression_signs",
+      "dialog_node": "node_1_1596134810499",
+      "previous_sibling": "node_7_1594596393025"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1593992680016",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Depression Signs",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#depression_signs",
+      "digress_in": "returns",
+      "dialog_node": "node_7_1594596393025",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1594589419604",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Chat",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I will recommend make lifestyle changes like eat healthy food, high in fruits and vegetables, have more physical activity, have a good sleep and avoid drinking alcoholic drinks. If these feelings are persistent please look the following areas: “Interpersonal therapy ” or \"Cognitive Behavioral Therapy”."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Symptoms_Test && $Symptoms_Test",
+      "dialog_node": "node_7_1595008856851",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "folder",
+      "title": "ChitChat",
+      "conditions": "",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1593992680016",
+      "previous_sibling": "node_8_1594509252707"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, my name is Nao and I'm a chatbot. Today I will help you to deal with your emotions and problems that you may have during this pandemic. What name can I call you by?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "Birthday"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Talk Therapy",
+  "language": "en",
+  "description": ""
+}
