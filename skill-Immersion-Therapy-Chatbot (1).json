@@ -1,0 +1,1592 @@
+{
+  "intents": [
+    {
+      "intent": "three",
+      "examples": [
+        {
+          "text": "three"
+        },
+        {
+          "text": "3"
+        },
+        {
+          "text": "thre"
+        }
+      ],
+      "description": "3"
+    },
+    {
+      "intent": "news",
+      "examples": [
+        {
+          "text": "news"
+        },
+        {
+          "text": "nws"
+        },
+        {
+          "text": "new"
+        }
+      ],
+      "description": "news update playing"
+    },
+    {
+      "intent": "immersion",
+      "examples": [
+        {
+          "text": "immersion"
+        },
+        {
+          "text": "immers"
+        },
+        {
+          "text": "imersion"
+        }
+      ],
+      "description": "NAO begins immersion therapy when hears \"immersion\""
+    },
+    {
+      "intent": "yes",
+      "examples": [
+        {
+          "text": "yes"
+        },
+        {
+          "text": "yup"
+        },
+        {
+          "text": "ys"
+        },
+        {
+          "text": "es"
+        }
+      ],
+      "description": "YES to begin session"
+    },
+    {
+      "intent": "anothertherapy",
+      "examples": [
+        {
+          "text": "another"
+        },
+        {
+          "text": "another therapy style"
+        },
+        {
+          "text": "anther"
+        },
+        {
+          "text": "another thrpy"
+        },
+        {
+          "text": "anther therapy"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "readytovisualize",
+      "examples": [
+        {
+          "text": "rdy 2 visualize"
+        },
+        {
+          "text": "ready 2 visualize"
+        },
+        {
+          "text": "r2v"
+        },
+        {
+          "text": "ready to visulize"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ready",
+      "examples": [
+        {
+          "text": "ready to start"
+        },
+        {
+          "text": "ready"
+        }
+      ],
+      "description": "ready to start"
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "hi"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "kia ora"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good morning"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "feel",
+      "examples": [
+        {
+          "text": "feel"
+        },
+        {
+          "text": "it makes me feel nervous"
+        },
+        {
+          "text": "i feel"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "donefortheday",
+      "examples": [
+        {
+          "text": "done"
+        },
+        {
+          "text": "done for the"
+        },
+        {
+          "text": "don 4 th day"
+        },
+        {
+          "text": "done for the day"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "readytoreplay",
+      "examples": [
+        {
+          "text": "ready 2 replay"
+        },
+        {
+          "text": "rdy to replay"
+        },
+        {
+          "text": "ready to replay"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "goodbyes",
+      "examples": [
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "c ya"
+        },
+        {
+          "text": "talk to you soon"
+        },
+        {
+          "text": "catch you later"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "see you"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "thank_you",
+      "examples": [
+        {
+          "text": "appreciate it"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "cheers"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "alert",
+      "examples": [
+        {
+          "text": "aler"
+        },
+        {
+          "text": "alrt"
+        },
+        {
+          "text": "alert"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "enough",
+      "examples": [
+        {
+          "text": "enough"
+        },
+        {
+          "text": "enough 4 today"
+        },
+        {
+          "text": "enoug for today"
+        },
+        {
+          "text": "enugh"
+        },
+        {
+          "text": "enough for today"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "readytosee",
+      "examples": [
+        {
+          "text": "ready to see"
+        },
+        {
+          "text": "rady to s"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "exposure",
+      "examples": [
+        {
+          "text": "xposure"
+        },
+        {
+          "text": "exposue"
+        },
+        {
+          "text": "exposure"
+        }
+      ],
+      "description": "NAO begins immersion therapy when hears \"exposure\""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "therapytype",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "general",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "school",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "work",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "3",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "3",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "general",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "33",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "three",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "thre",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "frame",
+      "title": "Immersion Therapy WD2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You are sitting down in your home. The sun outside is beginning to disappear and the night has come. Another day has passed and you sit in your bedroom in the same spot every night around this time. The news was just on. You remember the topic of discussion because it's the topic that has changed your daily life. The subject of coronavirus continues to be talked about on the news yet the sound of news reporters discussing it drones out due to it being overwhelming to you. You know that due to the pandemic you had to adjust and you know that working from home is now part of your new normal. \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_27_1594366354106"
+      },
+      "conditions": "#three",
+      "dialog_node": "node_26_1594366354106",
+      "previous_sibling": "node_25_1594366354106"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - WD5",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Keeping all of these thoughts in your head and internally panicking about them will continue to feel you with complete dread and will continue to make you more anxious. When you remove these thoughts by writing them down, you will be able to have clarity on the subject and the overwhelming feeling in your head will decrease. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_30_1594366354106"
+      },
+      "dialog_node": "node_29_1594366354106",
+      "previous_sibling": "node_28_1594366354106"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - WD9",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I completely understand how you feel based on what you have been going\nthrough. This situation came without warning and forced many of us into unemployment or to work from home. I understand the stress of financing food, rent, and bills. There are some resources available. Being out of work has caused many people to experience unemployment during this time. Your feelings are understandable and just.  In situations like these, people often file for unemployment, learn new skills for future job markets, or go back to school. These steps could be helpful for you but the most important one is taking care of your wellbeing. Do things during this time that help take some of the stress away. Remember to take care of yourself. \n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_34_1594366354106"
+      },
+      "conditions": "#feel",
+      "dialog_node": "node_33_1594366354106",
+      "previous_sibling": "node_32_1594366354106"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - WD6",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "So now let’s try it again but this time I want you to take a deep breath and remind yourself it will be okay and visualize yourself writing it down and removing the thought from your head and placing it down on a piece of paper.\n\nType \"ready to see\" when you are prepared to try it again following all the steps we have discussed. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_31_1594366354106"
+      },
+      "dialog_node": "node_30_1594366354106",
+      "previous_sibling": "node_29_1594366354106"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - WD10",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\nWould you like to go through another subcategory or was that session enough for today? Please type work, school, or done for the day. Either way, you did amazing today and I am so proud of you. I know that was hard placing yourself in a stressful situation, one that usually makes you uncomfortable but you did amazing. Remember it is always okay to seek out professional help and that you are not alone. You are very brave and courageous. I am always here for you. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_24_1594366354103"
+      },
+      "dialog_node": "node_34_1594366354106",
+      "previous_sibling": "node_33_1594366354106"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - WD4",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Since quarantine these types of messages and bills have made you panic and that's where your thoughts are starting to go. You must stop these thoughts before they lead you completely down the path of panicking. Instead, I would like you to realize first that it is okay to feel dread when seeing this. Second I would like you to take a deep breath and then make a mental note of this bill. Write down exactly what you are going to do to take care of this bill and how this bill makes you feel. \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_29_1594366354106"
+      },
+      "dialog_node": "node_28_1594366354106",
+      "previous_sibling": "node_27_1594366354106"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion Therapy WD3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You are at home. You are in your house self quarantining and because of that you are unable to continue your daily work routine. You have been placed into an unfortunate reality and I understand you are feeling overwhelmed. As you sit in the spot that you sit everyday, you look at your phone due to hearing an incoming message alert from it. You pick it up and see that your phone bill is due soon.\nShowing text with siri reading phone bill is due soon."
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_28_1594366354106"
+      },
+      "conditions": "",
+      "dialog_node": "node_27_1594366354106",
+      "previous_sibling": "node_26_1594366354106"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - WD8",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How did that make you feel? \"Write it makes me feel (insert how you feel here)\" "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_33_1594366354106"
+      },
+      "dialog_node": "node_32_1594366354106",
+      "previous_sibling": "node_31_1594366354106"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - WD1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This situation is for immersing you in a situation where you can learn to cope with work and being out of work during the COVID-19 pandemic. \nWe will start with beginning this simulation and we can repeat it as many times as you like to help you face and deal with these situations.\nTake a couple of deep breaths and count to three slowly. Type three when you are ready."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_26_1594366354106"
+      },
+      "conditions": "#ready",
+      "dialog_node": "node_25_1594366354106",
+      "previous_sibling": "response_35_1594366354106"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - WD7",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Replaying/showing the text with siri reading phone bill is due soon."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_32_1594366354106"
+      },
+      "conditions": "#readytosee",
+      "dialog_node": "node_31_1594366354106",
+      "previous_sibling": "node_30_1594366354106"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Get comfortable and adjust in your chair if necessary. I would like to bring you to a specific scenario, one that you may be familiar with already. You may experience many emotions, but it is important that you know that it is just a situation we are recalling and a memory can not harm you. You are safe. You are in your home. If it becomes too much and you feel too anxious you can open your eyes. However, I would like you to continue with the situation even if your eyes are no longer closed. Are you ready?   Type ready when you are."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_24_1594366354103",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_25_1594366354106"
+      },
+      "conditions": "",
+      "dialog_node": "response_35_1594366354106"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Beginning immersion/ exposure therapy session. I am now going to immerse you into a situation to help during the COVID-19 Self- Quarantine "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594262630500",
+      "conditions": "#immersion",
+      "dialog_node": "response_9_1594350429506",
+      "previous_sibling": "response_3_1594266082459"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Beginning immersion/ exposure therapy session. I am now going to immerse you into a situation to help during the COVID-19 Self- Quarantine "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594262630500",
+      "conditions": "#exposure",
+      "dialog_node": "response_3_1594266082459"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion Therapy GD3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "playingggg news audio clip "
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1594340640900"
+      },
+      "conditions": "#news",
+      "dialog_node": "node_10_1594338359927",
+      "previous_sibling": "node_4_1594269479995"
+    },
+    {
+      "type": "standard",
+      "title": "rtthgdfsds",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Would you like to go through another subcategory or was that session enough for today? Please type work, school, or done for the day. Either way, you did amazing today and I am so proud of you. Remember it is always okay to seek out professional help and that you are not alone. You are very brave and courageous. I am always here for you. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_5_1591301298012"
+      },
+      "dialog_node": "node_7_1594364552683",
+      "previous_sibling": "node_6_1594364239240"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - GD1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This situation is for immersing you in a situation where you can learn to cope with the general anxiety you may be experiencing during the COVID-19 pandemic.\nWe will start with beginning this simulation and we can repeat it as many times as you like to help you face and deal with these situations.\nTake a couple of deep breaths and count to three slowly. Type three when you are ready.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_4_1594269479995"
+      },
+      "conditions": "#ready",
+      "dialog_node": "node_9_1594267941268",
+      "previous_sibling": "response_4_1594347308971"
+    },
+    {
+      "type": "standard",
+      "title": "nextttttt",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "So now let’s try it again but this time I want you to take a deep breath and remind yourself it will be okay and visualize yourself writing it down and removing the thought from your head and placing it down on a piece of paper.\n\nType \"ready to visualize\" when you are prepared to try it again following all the steps we have discussed. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1594363600852"
+      },
+      "dialog_node": "node_6_1594363191107",
+      "previous_sibling": "node_4_1594363087803"
+    },
+    {
+      "type": "standard",
+      "title": "nextttwd",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How did that make you feel? \"Write it makes me feel (insert how you feel here)\" "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1594364239240"
+      },
+      "dialog_node": "node_9_1594363640125",
+      "previous_sibling": "node_2_1594363600852"
+    },
+    {
+      "type": "standard",
+      "title": "feel",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I completely understand how you feel based on what you have been going\nthrough.Try to accomplish a new personal goal little by little if you are overwhelmed and try to not let things build up so you do not feel even more stressed. You just need to take it day by day and I know you'll get through it. I will always be here to help you too. \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1594364552683"
+      },
+      "conditions": "#feel",
+      "dialog_node": "node_6_1594364239240",
+      "previous_sibling": "node_9_1594363640125"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Playing news clip again"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1594363640125"
+      },
+      "conditions": "#readytovisualize",
+      "dialog_node": "node_2_1594363600852",
+      "previous_sibling": "node_6_1594363191107"
+    },
+    {
+      "type": "standard",
+      "title": "next",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Since quarantine, the news channel is hard to listen to. It's hard to imagine this is now a reality. You feel a little trapped being at home but also out of control because there is nothing to do to fix the current situation. The complete shift in life has been hard and it is hard. I want you to take measures so you do not feel so overwhelmed and can manage your feelings during this time.  The first step I would like you to take is to take a deep breath. You are strong and can get through this. The next step I would like you to take is to organize and write down everything you feel or think. As of right now though, I would like you to imagine writing down each thing and as you write it down imagine pulling the stress out of your head with every pen stroke that hits the page. \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1594363087803"
+      },
+      "dialog_node": "node_3_1594340640900",
+      "previous_sibling": "node_10_1594338359927"
+    },
+    {
+      "type": "frame",
+      "title": "Immersion Therapy GD2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You are home. You have been home for a couple of months. The world has changed before your eyes. You have seen how the pandemic has changed everyday life. Face masks must be worn at all times when out. Gloves are emphasized. 6 feet apart is the new montra. Your work and school habits were modified. Life now is mainly inside while the world is trying to figure out what to do. As you sit at home, you hear the news update the world about any new developments regarding the coronavirus.\nType News to See the News Update"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1594338359927"
+      },
+      "conditions": "#three",
+      "dialog_node": "node_4_1594269479995",
+      "previous_sibling": "node_9_1594267941268"
+    },
+    {
+      "type": "standard",
+      "title": "nextttt",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Keeping all of these thoughts in your head and internally panicking about them will continue to feel you with complete dread and will continue to make you more anxious. When you remove these thoughts by writing them down, you will be able to have clarity on the subject and the overwhelming feeling in your head will decrease."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1594363191107"
+      },
+      "dialog_node": "node_4_1594363087803",
+      "previous_sibling": "node_3_1594340640900"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Get comfortable and adjust in your chair if necessary. I would like to bring you to a specific scenario, one that you may be familiar with already. You may experience many emotions, but it is important that you know that it is just a situation we are recalling and a memory can not harm you. You are safe. You are in your home. If it becomes too much and you feel too anxious you can open your eyes. However, I would like you to continue with the situation even if your eyes are no longer closed. Are you ready?   Type ready when you are."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594266826193",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_9_1594267941268"
+      },
+      "conditions": "",
+      "dialog_node": "response_4_1594347308971"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion Therapy SD3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The alert was an email sound with a new assignment added \nSince quarantine, these emails and simply the sound of new alert makes you more on edge and you often feel schoolwork overwhelming presence. I want you to take measures so you do not feel so overwhelmed and can manage new and existing assignments. The first step I would like you to take is to take a deep breath. You are a great student and I know you will put in your all to get the assignments done and get the best grade you can. The next step I would like you to take is to organize and write down everything you need to do and times you will allot to each assignment and for studying. As of right now though, I would like you to imagine writing down each thing you have to do, and as you write it down imagine pulling the stress out of your head with every pen stroke that hits the page. \n"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_16_1594366347045"
+      },
+      "conditions": "#alert",
+      "dialog_node": "node_15_1594366347045",
+      "previous_sibling": "node_14_1594366347045"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion Therapy SD8",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I completely understand how you feel based on what you have been going\nthrough.Try to accomplish school work little by little if you are overwhelmed and try to not let things build up so you do not feel even more stressed. You just need to take it day by day and I know you'll get through it. I will always be here to help you too. \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_22_1594366347045"
+      },
+      "conditions": "#feel",
+      "dialog_node": "node_21_1594366347045",
+      "previous_sibling": "node_20_1594366347045"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion Therapy SD5",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "So now let’s try it again but this time I want you to take a deep breath and remind yourself it will be okay and visualize yourself writing it down and removing the thought from your head and placing it down on a piece of paper.\n\nType \"ready to replay\" when you are prepared to try it again following all the steps we have discussed. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_19_1594366347045"
+      },
+      "dialog_node": "node_18_1594366347045",
+      "previous_sibling": "node_16_1594366347045"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion Therapy SD9",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Would you like to go through another subcategory or was that session enough for today? Please type work, general, or done for the day. \nI know that was hard placing yourself in a stressful situation, one that usually makes you uncomfortable but you did amazing. Sometimes it can feel that way, but it’s important to keep going.  As we keep practicing these exposures you will feel less fear and anxiety. You'll be better equipped to deal with your emotions when they arise. You should be really proud of what you just did."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_5_1591301298012"
+      },
+      "dialog_node": "node_22_1594366347045",
+      "previous_sibling": "node_21_1594366347045"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion therapy - SD1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This situation is for immersing you in a situation where you can learn to cope with school and being placed in online school during the COVID-19 pandemic. \nWe will start with beginning this simulation and we can repeat it as many times as you like to help you face and deal with these situations.\nTake a couple of deep breaths and count to three slowly. Type three when you are ready.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_14_1594366347045"
+      },
+      "conditions": "#ready",
+      "dialog_node": "node_13_1594366347045",
+      "previous_sibling": "response_23_1594366347045"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion Therapy SD6",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Replaying/showing the alert with an email sound with a new assignment added."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_20_1594366347045"
+      },
+      "conditions": "#readytoreplay",
+      "dialog_node": "node_19_1594366347045",
+      "previous_sibling": "node_18_1594366347045"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion Therapy SD7",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How did that make you feel? \"Write it makes me feel (insert how you feel here)\" "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_21_1594366347045"
+      },
+      "dialog_node": "node_20_1594366347045",
+      "previous_sibling": "node_19_1594366347045"
+    },
+    {
+      "type": "standard",
+      "title": "Immersion Therapy SD4",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Keeping all of these thoughts in your head and internally panicking about them will continue to feel you with complete dread and will continue to make you more anxious. When you remove these thoughts by writing them down, you will be able to have clarity on the subject and the overwhelming feeling in your head will decrease. \n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_18_1594366347045"
+      },
+      "dialog_node": "node_16_1594366347045",
+      "previous_sibling": "node_15_1594366347045"
+    },
+    {
+      "type": "frame",
+      "title": "Immersion Therapy SD2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You are at home. School no longer is held in physical classes due to everything that is happening. You are now attending online classes since colleges have closed and now everything is virtual. The school work you have received now feels like more than the usual amount and begins to feel overwhelming with all that is left to do. The transition has been hard on you and focusing on school during a pandemic gets harder. You are sitting at your computer when you hear.. \n\nType Alert to see what the new alert you just received. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_15_1594366347045"
+      },
+      "conditions": "#three",
+      "dialog_node": "node_14_1594366347045",
+      "previous_sibling": "node_13_1594366347045"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Get comfortable and adjust in your chair if necessary. I would like to bring you to a specific scenario, one that you may be familiar with already. You may experience many emotions, but it is important that you know that it is just a situation we are recalling and a memory can not harm you. You are safe. You are in your home. If it becomes too much and you feel too anxious you can open your eyes. However, I would like you to continue with the situation even if your eyes are no longer closed. Are you ready? Type ready when you are."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1594366347040",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_13_1594366347045"
+      },
+      "conditions": "",
+      "dialog_node": "response_23_1594366347045"
+    },
+    {
+      "type": "standard",
+      "title": "Thank You",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You're welcome. "
+              },
+              {
+                "text": "My pleasure."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1590612411280",
+      "conditions": "#thank_you",
+      "dialog_node": "node_5_1590612449155",
+      "previous_sibling": "node_2_1590612434212"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbyes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It was really nice talking to you today. If you ever want to talk again, I am here for you."
+              },
+              {
+                "text": "Have a great day. I am here for you. You did great today. "
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1590612411280",
+      "conditions": "#goodbyes",
+      "dialog_node": "node_4_1590612466630",
+      "previous_sibling": "node_5_1590612449155"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there. Would you like to begin Immersion Therapy? If so type work, general, or school."
+              },
+              {
+                "text": "Hello. Would you like to begin Immersion Therapy? If so type work, general, or school."
+              },
+              {
+                "text": "Hi. Would you like to begin Immersion Therapy? If so type work, general, or school."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1590612411280",
+      "conditions": "#greetings",
+      "dialog_node": "node_2_1590612434212"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1591301298012",
+      "variable": "$therapytype",
+      "dialog_node": "slot_8_1594266735035",
+      "previous_sibling": "node_24_1594366354103"
+    },
+    {
+      "type": "frame",
+      "title": "Therapy Type School ",
+      "output": {},
+      "parent": "node_5_1591301298012",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_13_1594366347045"
+      },
+      "conditions": "#yes || @therapytype:work",
+      "dialog_node": "node_12_1594366347040",
+      "previous_sibling": "node_7_1594266826193"
+    },
+    {
+      "type": "frame",
+      "title": "Therapy Type Work",
+      "output": {},
+      "parent": "node_5_1591301298012",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_25_1594366354106"
+      },
+      "conditions": "#yes || @therapytype:work",
+      "dialog_node": "node_24_1594366354103",
+      "previous_sibling": "node_12_1594366347040"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Let us begin: Work anxiety during the COVID-19 outbreak."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1591301298012",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_24_1594366354103"
+      },
+      "conditions": "$therapytype:work",
+      "dialog_node": "response_4_1591301650146",
+      "previous_sibling": "response_4_1591301586801"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Lets Begin: General anxiety during the COVID-19 outbreak."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1591301298012",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_7_1594266826193"
+      },
+      "conditions": "$therapytype:general",
+      "dialog_node": "response_4_1591301586801",
+      "previous_sibling": "slot_8_1594266735035"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Let us begin: School anxiety during the COVID-19 outbreak."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1591301298012",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_12_1594366347040"
+      },
+      "conditions": "$therapytype:school",
+      "dialog_node": "response_10_1591301659564",
+      "previous_sibling": "response_4_1591301650146"
+    },
+    {
+      "type": "frame",
+      "title": "Therapy Type General",
+      "parent": "node_5_1591301298012",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1594267941268"
+      },
+      "conditions": "#yes || @therapytype:general",
+      "dialog_node": "node_7_1594266826193"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What catergory would you like to begin: General, work, school"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1594266735035",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1594266735045",
+      "previous_sibling": "handler_9_1594266735045"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1594266735035",
+      "context": {
+        "therapytype": "@therapytype"
+      },
+      "conditions": "@therapytype",
+      "event_name": "input",
+      "dialog_node": "handler_9_1594266735045"
+    },
+    {
+      "type": "standard",
+      "title": "Collect Name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nice to meet you, $name. I know it has been hard since the COVID-19 outbreak. I am here to help you deal with your emotions and feelings during this time. Type immersion or exposure to begin the immersion/ exposure therapy session with me. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "<? input.text.substring(0, 1).toUpperCase() + input.text.substring(1) ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1591211788743"
+    },
+    {
+      "type": "frame",
+      "title": "General, Work, School ",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@therapytype",
+      "digress_in": "returns",
+      "dialog_node": "node_5_1591301298012",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_7_1594262630500",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing. Thank you so much."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding. I'm sorry."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_8_1590612411280",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "folder",
+      "title": "Chitchat",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1590612411280",
+      "previous_sibling": "node_5_1591301298012"
+    },
+    {
+      "type": "standard",
+      "title": "Okay- Beginning Immersion Therapy Session ",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1591301298012"
+      },
+      "conditions": "#immersion || #exposure",
+      "dialog_node": "node_7_1594262630500",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, my name is Nao and I'm a chatbot. What name can I call you by?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "general"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Immersion Therapy Chatbot",
+  "language": "en",
+  "description": ""
+}
